@@ -1,21 +1,22 @@
+# Session 3: Multi-Agent Systems with LLMs
 
 
-# Session 3: Multi-Agent Systems
+## Objective:
+Explore collaborative and competitive agent systems.
 
-## Objective
+## Core Concepts:
 
-Understand the concept of multi-agents.
+### 1. **Agent Collaboration**
+   - How multiple LLM agents can work together.
 
-We are just going to scratch the surface of multi-agents because our goal at the moment is to solidify our understanding of agents and build a simple agentic AI system.
+### 2. **Task Delegation**
+   - Using specialized agents for specific tasks.
 
-### Core Ideas
+### 3. **Challenges**
+   - Managing communication and context sharing.
 
-- Understand cooperative vs. competitive agents.
-  - Link
-- Learn how agents communicate in shared environments.
-  - Paper
+## Hands-On Exercise:
+Implement a multi-agent system where one agent generates text, and another critiques or improves it.
 
-
-
-
-
+### Example:
+Write an agent that drafts a cover letter and another that edits it for grammar and style.

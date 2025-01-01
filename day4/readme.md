@@ -1,19 +1,14 @@
 
+# Session 4: Real-World Applications of LLM Agents (Final Project)
+## Objective:
+Build a complete LLM-powered application.
 
-# Session 5: Real-World Applications of AI Agents (Final Project)
+## Application Areas:
+- **Customer Support**: Chatbots.
+- **Content Creation**: Blog or article generation.
+- **Data Analysis**: Summarization or question-answering systems.
 
-## Objective
-
-Build an AI Agent that 
-
-### Where are AI Agents Used?
-
-- **Robotics**: Autonomous navigation.
-- **Gaming**: NPC behavior.
-- **Finance**: Trading bots.
-- **Smart Systems**: Home automation.
-
-
-### Hands-On Final Project
-- Build your own Ai agent! 
+## Hands-On Final Project:
+### Example:
+Create an AI assistant that integrates LLMs with APIs (e.g., weather, calendar).
 

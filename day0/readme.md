@@ -1,7 +1,7 @@
 # AI Agents: Session Zero - Study Group
 
 ## Objective
-Understand the basics of AI agents.
+Understand the basics of AI agents and explore the concept of agentic AI.
 
 ---
 
@@ -13,8 +13,6 @@ An AI agent is an **autonomous system** designed to interact with its environmen
 - **Interactive**: Engages with the environment to gather information and influence outcomes.
 
 ---
-
-
 
 ### **Core Concepts**
 To fully grasp the functioning of AI agents, it is important to understand the following terms:
@@ -47,6 +45,46 @@ The **reward** is a numerical value provided to the agent after it performs an a
 
 ---
 
+### **Agentic AI: Extending the Concept of AI Agents**
 
+**Agentic AI** refers to advanced AI systems that demonstrate a higher degree of independence, initiative, and adaptability. While traditional AI agents operate within predefined frameworks, agentic AI pushes the boundaries by showcasing characteristics that make them appear more "agent-like," often capable of pursuing open-ended goals.
 
+#### Key Attributes of Agentic AI
+
+1. **Proactivity**:
+   - Unlike basic AI agents that react to their environment, agentic AI systems can proactively take the initiative to explore, plan, and act toward achieving overarching goals.
+
+2. **Goal Orientation**:
+   - They operate not just on immediate rewards but also focus on achieving long-term, multi-step objectives.
+
+3. **Generalization**:
+   - These systems can adapt to new environments or tasks they have not been explicitly trained on, demonstrating versatility in decision-making.
+
+4. **Self-improvement**:
+   - Agentic AI can learn from past actions, adjust strategies, and refine its capabilities without direct human intervention.
+
+5. **Multi-agent Collaboration**:
+   - Agentic AI systems often interact and collaborate with other agents (human or AI), solving complex problems through cooperative strategies.
+
+#### Applications of Agentic AI
+
+1. **Autonomous Vehicles**:
+   - Navigating complex environments, making real-time decisions, and learning from traffic patterns.
+
+2. **AI-powered Assistants**:
+   - Systems like virtual personal assistants that can schedule tasks, handle emails, and proactively offer solutions to unstructured problems.
+
+3. **AI in Research**:
+   - Conducting experiments, hypothesizing, and iterating scientific research with minimal supervision.
+
+4. **Game AI**:
+   - AI systems that not only adapt to player strategies but can also propose new challenges or narratives.
+
+#### Challenges and Considerations
+
+- **Ethical Concerns**: Agentic AI systems making autonomous decisions raise questions about accountability and ethical constraints.
+- **Complexity Management**: Designing and maintaining such systems requires robust frameworks to prevent unintended behaviors.
+- **Safety**: Ensuring agentic AI aligns with human values and does not cause harm is a critical challenge.
+
+---
 

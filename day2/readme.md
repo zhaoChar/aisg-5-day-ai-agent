@@ -1,20 +1,30 @@
+## Session 2: Building Intelligent Agents
 
-# Session 2: Introduction to Learning Agents
+### **Objective**
 
-## Objective
+Understand LLM-based agent architectures and workflows.
 
-Understand the different types of agents.
+---
+
+### **Core Concepts**
+
+- **LangChain Framework**: Using LangChain to build modular agents.
+- **Decision Trees**: Guiding the agent’s actions based on user input.
+- **Tools and Plugins**: Integrating external APIs for specific tasks.
+
+---
+
+### **Hands-On Exercise**
+
+1. **Build an Agent**:
+
+   - Use LangChain to retrieve data from Wikipedia.
+
+2. **Example Project**:
+
+   - "Create an LLM agent that summarizes Wikipedia articles on demand."
+
+---
 
 
-### Hands-On Exercise
-
-Build a learning agent that collects rewards if the agent moves in the right direction.
-
-Reinforcement learning is a type of machine learning technique where an agent learns to make decisions by interacting with its environment, receiving feedback in the form of rewards or penalties, and adjusting its behavior to maximize the cumulative reward.
-
-### Study the basics of Reinforcement Learning (RL):
-
-- States
-- Actions
-- Rewards
 
