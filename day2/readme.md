@@ -24,6 +24,8 @@ Understand LLM-based agent architectures and workflows.
 
    - "Create an LLM agent that summarizes Wikipedia articles on demand."
 
+### Integrate a agentic framework (optional)
+
 ---
 
 

@@ -24,6 +24,7 @@ Learn how LLMs interact with users and environments.
 **Example Project**:
    - A chatbot that assists users in scheduling meetings, using context to suggest optimal times based on prior inputs and user preferences.
 
+
 ---
 
 
