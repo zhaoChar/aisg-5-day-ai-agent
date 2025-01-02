@@ -2,6 +2,7 @@
 pip
 autopep8
 python-dotenv
+httpx
 # App
 google-generativeai # Client library for the Gemini API
 Pillow # PIL image-loading library
