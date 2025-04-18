@@ -8,3 +8,5 @@ nbformat
 # App
 google-generativeai # Client library for the Gemini API
 Pillow # PIL image-loading library
+newspaper3k # Library for parsing news articles
+lxml_html_clean # Required for newspaper3k
