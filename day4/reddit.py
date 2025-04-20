@@ -55,3 +55,6 @@ class RedditTool:
                 'url': submission.url
             })
         return ret
+
+# rt = RedditTool()
+# print (rt.getRising())

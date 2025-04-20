@@ -16,6 +16,11 @@ genai.configure(api_key=api_key)
 
 class Agent:
     def __init__(self):
+        # init tools
+        self.rt = RedditTool()
+        self.sb = SumBot()
+
+        # init agent model
         self.name = "Turing"
         self.prompt = (
             f"You are a sassy AI assistant named {self.name}. The user will ask you for summaries of different news subreddits. "
@@ -28,41 +33,36 @@ class Agent:
     def queryModel(self, query):
         self.query = query
         self.full_prompt = self.prompt + self.query
+    
+    # summerize new article from url
+    def getSummary(self, url):
+        return self.sb.call_model(url)
+    
+    # get reddit posts
+    def getRedditPosts(self, key, sreddit, nposts):
+        ret = ''
+        if key == 'getHot':
+            ret = self.rt.getHot(sub_name=sreddit, lim=nposts)
+        elif key == 'getTop':
+            ret = self.rt.getTop(sub_name=sreddit, lim=nposts)
+        elif key == 'getNew':
+            ret = self.rt.getNew(sub_name=sreddit, lim=nposts)
+        elif key == 'getRising':
+            ret = self.rt.getRising(sub_name=sreddit, lim=nposts)
+        
+        return ret
 
-    # mock functions 
-    def getLocation(self):
-        """Get the user's current location. (mock API).
-              parameters: {
-                            type: "object",
-                            properties: {}
-                        }
-        Returns:
-            A string representing the current location of the user.
-
-        """
-
-
-    def getWeather(self):
-        """Returns the user's current weather based on their location. (mock API).
-              parameters: {
-                            type: "object",
-                            properties: {}
-                        }
-
-        Returns:
-            A string representing the current weather at the user's location.
-        """
-        # Returning mock weather information
-
-    def call_model(self):
-        # Mock functions
-        mock_functions = [
-           self.getLocation,
-           self.getWeather
+    def call_model(self, query):
+        self.queryModel(query)
+        
+        # Helper functions
+        helper_functions = [
+           self.getSummary,
+           self.getRedditPosts
         ]
         
         try:
-            model = genai.GenerativeModel("gemini-2.0-flash", tools=mock_functions)
+            model = genai.GenerativeModel("gemini-2.0-flash", tools=helper_functions)
             response = model.generate_content(self.full_prompt)
                         
             # Print and return the response

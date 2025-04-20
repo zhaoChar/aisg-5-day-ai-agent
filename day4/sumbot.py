@@ -19,6 +19,7 @@ class SumBot:
             'You are a news article summary bot. You will be given the url, author names, publish date, keywords, and body text of a news article. '
             'You will use this data to generate a specific, accurate, and concise summary of the article. Do not leave out any important information. '
             'Prioritize accuracy over concision. The output must be formatted as:\n'
+            'URL: <url>\n'
             'Authors: <author names>; <news source>; Published: <publish time>, <publish date>\n'
             '<headline on a new line>\n'
             '<summary on a new line>\n'
@@ -51,11 +52,13 @@ class SumBot:
             # Print and return the response
             if response:
                 txt_response = response.parts[0].text.strip()
-                print(txt_response)
+                return txt_response
             else:
                 print("Error: No response from the model.")
+                return -1
         except Exception as e:
             print(f"An error occurred: {e}")
-            
-sb = SumBot()
-sb.call_model(url='https://www.nbcnewyork.com/local/sex-toys-cause-fire-engulfing-multiple-staten-island-homes-court-docs/6230573/')
+            return -1
+
+# sb = SumBot()
+# print (sb.call_model('https://www.npr.org/2025/04/20/g-s1-60984/germany-deportation-protesters'))

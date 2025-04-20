@@ -1,20 +1,16 @@
 from model import Agent
 
+agent = Agent()
+
 # Example usage
-query = "What is (8 * 5.43 + 7) ^ 6.5"
-agent = Agent(query)
+while True:
+    query = input('Enter your query: ')
+    
+    if (query == 'exit()'):
+        break
 
-max_calls = 1
+    max_calls = 1
 
-for i in range(max_calls):
-    print(f"iterations: {i + 1}")
-    agent.call_model()
-
-# # check finish reason     
-# if finish_reason == "STOP":
-#     return repsonse 
-# elif "mock_function":
-#     agent.call_model()
-#     #append the results 
-
-    #continue 
+    for i in range(max_calls):
+        print(f"iterations: {i + 1}")
+        agent.call_model(query)
