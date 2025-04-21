@@ -12,5 +12,5 @@ while True:
     max_calls = 1
 
     for i in range(max_calls):
-        print(f"iterations: {i + 1}")
+        # print(f"iterations: {i + 1}")
         agent.call_model(query)

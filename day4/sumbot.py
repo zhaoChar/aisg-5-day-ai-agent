@@ -28,7 +28,7 @@ class SumBot:
             'headline here...\n'
             'summary here...\n'
         )
-        
+
     def setURL(self, url):
         # print ('set url called')
         self.article = Article(url)
